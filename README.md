@@ -18,7 +18,7 @@ Para garantir alta coesão, consistência conceitual e viabilidade de indexaçã
 ---
 
 ### Modelagem do DER:
-<img width="1509" height="1062" alt="diagrama_er" src="https://github.com/user-attachments/assets/af2d2211-3879-4aaf-b4c7-7dff73a46051" />
+<img width="1121" height="791" alt="diagrama_youtube_bd" src="https://github.com/user-attachments/assets/3fb4f796-6211-49a1-8e79-47575d6c6535" />
 
 ---
 
