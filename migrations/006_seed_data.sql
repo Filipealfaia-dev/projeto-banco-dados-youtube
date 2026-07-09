@@ -1,21 +1,93 @@
+TRUNCATE TABLE public.usuarios RESTART IDENTITY CASCADE;
+
 INSERT INTO public.usuarios (nome_completo, email, senha_hash) VALUES
-('Filipe Alfaia', 'filipe@ufpa.br', 'hash_filipe'),
-('Matheus Vinagre', 'matheus@ufpa.br', 'hash_matheus'),
-('Visitante', 'visitante@email.com', 'hash_visit');
+('Filipe Alfaia', 'filipe@ufpa.br', 'hash_1'),
+('Matheus Vinagre', 'matheus@ufpa.br', 'hash_2'),
+('João Ferreira', 'joao.ferreira@ufpa.br', 'hash_3'),
+('João Lisboa', 'joao.lisboa@ufpa.br', 'hash_4'),
+('Raiane Pacheco', 'raiane@ufpa.br', 'hash_5'),
+('Victor Hugo', 'victor.hugo@ufpa.br', 'hash_6'),
+('Guilherme Pimenta', 'guilherme@ufpa.br', 'hash_7'),
+('Maria Siqueira', 'maria@ufpa.br', 'hash_8'),
+('Luis Leonam', 'luis@ufpa.br', 'hash_9'),
+('Amanda Gabi', 'amanda@ufpa.br', 'hash_10'),
+('Gustavo Pinto', 'gustavo@ufpa.br', 'hash_11'),
+('Carlos Souza', 'carlos@ufpa.br', 'hash_12'),
+('Ana Clara', 'ana@ufpa.br', 'hash_13'),
+('Bruno Silva', 'bruno@ufpa.br', 'hash_14'),
+('Fernanda Lima', 'fernanda@ufpa.br', 'hash_15'),
+('Rodrigo Alves', 'rodrigo@ufpa.br', 'hash_16'),
+('Juliana Castro', 'juliana@ufpa.br', 'hash_17'),
+('Pedro Henrique', 'pedro@ufpa.br', 'hash_18'),
+('Beatriz Santos', 'beatriz@ufpa.br', 'hash_19'),
+('Thiago Mendes', 'thiago@ufpa.br', 'hash_20');
 
 INSERT INTO public.canais (id_usuario, nome_canal, descricao) VALUES
-(1, 'Alfaia Tech', 'Canal de tecnologia e programação pragmática.'),
-(2, 'Matheus Plays', 'Gameplays focados em action-RPGs hardcore.');
+(1, 'Alfaia Tech', 'Canal de programação pragmática e Java Avançado.'),
+(2, 'Matheus Plays', 'Gameplays focados em action-RPGs hardcore.'),
+(3, 'Ferreira Dev', 'Dicas de infraestrutura e banco de dados.'),
+(4, 'Lisboa Sistemas', 'Análise de complexidade de algoritmos.'),
+(5, 'Raiane Acadêmico', 'Formatação LaTeX e manuais de TCC.'),
+(6, 'LABES UFPA', 'Projetos de extensão e engenharia de software.'),
+(7, 'Pimenta Dados', 'Modelagem de sistemas complexos.'),
+(8, 'Maria SQL', 'Otimização avançada de queries.'),
+(9, 'Leonam DB', 'Estruturas de sistemas de entrega.'),
+(10, 'Amanda QA', 'Testes e qualidade de software.'),
+(11, 'DB1 Masters', 'Aulas de Banco de Dados.'),
+(12, 'Carlos Code', 'Vlogs de rotina universitária na FACOMP.'),
+(13, 'Ana Hardware', 'Reviews de tecnologia e montagem de PC.'),
+(14, 'Bruno Lo-Fi', 'Música Lo-Fi para programar.'),
+(15, 'Nanda Cast', 'Cortes de podcasts de tecnologia e carreira.'),
+(16, 'Rodrigo DevOps', 'Deploy de aplicações e infraestrutura Cloud.'),
+(17, 'Juliana Sec', 'Cibersegurança e proteção de dados.'),
+(18, 'Pedro Cloud', 'Arquitetura de servidores na nuvem e AWS.'),
+(19, 'Bia Frontend', 'UX/UI e design de interfaces web.'),
+(20, 'Thiago Backend', 'Arquitetura de microsserviços e APIs rest.');
 
-INSERT INTO public.videos (id_canal, titulo, url_video, duracao_segundos) VALUES
-(1, 'Modelagem de Dados na Prática', 'youtube.com/v/12345', 600),
-(2, 'No-Hit Run Boss Final - Dark Souls 3', 'youtube.com/v/67890', 1500);
+INSERT INTO public.videos (id_canal, titulo, url_video, duracao_segundos, data_publicacao) VALUES
+(1, 'Java OO e Gerenciamento de Memória', 'yt.com/v/001', 1200, '2026-01-10 14:00:00'),
+(2, 'Dark Souls 3: No-Hit Run Boss Final', 'yt.com/v/002', 3400, '2026-01-15 19:30:00'),
+(3, 'Otimizando Queries no PostgreSQL', 'yt.com/v/003', 900, '2026-02-01 10:15:00'),
+(4, 'Complexidade O(log n) na Prática', 'yt.com/v/004', 2100, '2026-02-10 09:00:00'),
+(5, 'Como Formatar o TCC em LaTeX', 'yt.com/v/005', 4200, '2026-02-20 11:20:00'),
+(6, 'Engenharia de Software no LABES', 'yt.com/v/006', 1500, '2026-03-01 14:00:00'),
+(7, 'Modelagem de Sistemas de Entrega', 'yt.com/v/007', 1800, '2026-03-05 16:00:00'),
+(8, 'Índices B-Tree na Prática', 'yt.com/v/008', 2000, '2026-03-15 10:00:00'),
+(9, 'Mundo de Wumpus em Python', 'yt.com/v/009', 2500, '2026-04-02 20:00:00'),
+(10, 'Treino C: Máquinas e Ergométrica', 'yt.com/v/010', 3000, '2026-04-12 08:00:00'),
+(11, 'Avaliação de Consultas Complexas', 'yt.com/v/011', 1100, '2026-04-20 17:00:00'),
+(12, 'Rotina de Estudos na UFPA', 'yt.com/v/012', 1300, '2026-05-05 19:00:00'),
+(13, 'Montando PC Gamer com Custo Benefício', 'yt.com/v/013', 4500, '2026-05-10 21:00:00'),
+(14, 'Lo-Fi Hip Hop - Beats para Estudar', 'yt.com/v/014', 1600, '2026-05-25 15:00:00'),
+(15, 'Mercado de TI em 2026 - Cortes', 'yt.com/v/015', 2200, '2026-06-01 11:00:00'),
+(16, 'Normalização de Dados até 3FN', 'yt.com/v/016', 2700, '2026-06-10 14:30:00'),
+(17, 'Protegendo seu Banco de SQL Injection', 'yt.com/v/017', 1900, '2026-06-20 16:45:00'),
+(18, 'Views Materializadas para Dashboards', 'yt.com/v/018', 2100, '2026-06-25 09:30:00'),
+(19, 'Transações ACID Explicadas', 'yt.com/v/019', 3100, '2026-07-01 10:20:00'),
+(20, 'Backup e Restore Seguro no Postgres', 'yt.com/v/020', 1400, '2026-07-05 18:15:00');
 
 INSERT INTO public.comentarios (id_video, id_usuario, conteudo) VALUES
-(1, 2, 'Modelo bem enxuto, direto ao ponto!'),
-(2, 1, 'Build excelente, qual arma você usou?');
+(1, 2, 'Bom!'), (1, 3, 'Top!'), (1, 4, 'Ajudou muito.'), (1, 5, 'Excelente didática.'),
+(2, 6, 'Boa esquiva!'), (2, 7, 'Boss muito difícil.'), (2, 8, 'Ótimo vídeo.'), (2, 9, 'Qual arma usou?'),
+(3, 10, 'Muito útil.'), (3, 11, 'Bem explicado.'), (3, 12, 'Entendi tudo agora.'), (3, 13, 'Postgres é excelente.'),
+(4, 14, 'LaTeX salva vidas.'), (4, 15, 'Obrigado pelo guia.'), (4, 16, 'Onde acho o template?'), (4, 17, 'Muito bom mesmo.'),
+(5, 18, 'LABES é referência.'), (5, 19, 'Como entro no laboratório?'), (5, 20, 'Projetos interessantes.'), (5, 1, 'Iniciativa top!'),
+(6, 2, 'Muito didático.'), (6, 3, 'Valeu pela aula.'), (6, 4, '1:N ficou fácil de entender.'), (6, 5, 'Perfeito.'),
+(7, 6, 'Vídeo rápido e direto.'), (7, 7, 'Otimizou muito meu código.'), (7, 8, 'B-Tree é genial.'), (7, 9, 'Boa explicação teórica.'),
+(8, 10, 'Cascade pode ser perigoso.'), (8, 11, 'Prefiro soft delete.'), (8, 12, 'Depende do caso de uso.'), (8, 13, 'Para este MVP, cascade resolve.'),
+(9, 14, 'Lógica impecável.'), (9, 15, 'O Wumpus deu trabalho.'), (9, 16, 'Python salva.'), (9, 17, 'Código muito limpo.'),
+(10, 18, 'Doeu só de ver o treino.'), (10, 19, 'Bora treinar pesado.'), (10, 20, 'Foco total!'), (10, 1, 'O shape está a vir.'),
+(11, 2, 'Essa Caloi é boa?'), (11, 3, 'Aro 29 é o melhor.'), (11, 4, 'Comprei uma ontem.'), (11, 5, 'Achei o preço alto.'),
+(12, 6, 'Gostei do vlog.'), (12, 7, 'FACOMP exige muito.'), (12, 8, 'Vídeo muito real.'), (12, 9, 'Quando sai o próximo?'),
+(13, 10, 'Qual a placa mãe?'), (13, 11, 'A fonte aguenta?'), (13, 12, 'Setup brabo.'), (13, 13, 'Vou copiar as peças.'),
+(14, 14, 'Estudo ouvindo isso.'), (14, 15, 'Beats perfeitos.'), (14, 16, 'Deixa a mente focada.'), (14, 17, 'Recomenda outra playlist?'),
+(15, 18, 'O mercado está difícil.'), (15, 19, 'Gostei da análise.'), (15, 20, 'Tem que estudar sempre.'), (15, 1, 'Apoio essa visão.'),
+(16, 2, 'Fui até à 3FN no meu projeto.'), (16, 3, 'A BCNF já me confunde.'), (16, 4, 'Tudo para evitar anomalias.'), (16, 5, 'Essencial para a disciplina.'),
+(17, 6, 'Usa PL/pgSQL?'), (17, 7, 'Prefiro tratar no backend.'), (17, 8, 'Ficou muito seguro.'), (17, 9, 'Excelente alerta.'),
+(18, 10, 'Bom usar como cache.'), (18, 11, 'O refresh é manual?'), (18, 12, 'Excelente para BI.'), (18, 13, 'Gostei da abordagem.'),
+(19, 14, 'Lembra o Teorema CAP.'), (19, 15, 'O isolamento é a chave.'), (19, 16, 'Conceito básico e vital.'), (19, 17, 'Isto cai na prova de amanhã.'),
+(20, 18, 'Fazer dump já me salvou.'), (20, 19, 'Um cronjob ajuda aqui.'), (20, 20, 'Segurança a 100%.'), (20, 1, 'Nunca perdi dados assim.');
 
-INSERT INTO public.inscricoes (id_usuario, id_canal) VALUES 
-(2, 1), 
-(3, 1), 
-(1, 2);
+INSERT INTO public.inscricoes (id_usuario, id_canal) VALUES
+(1, 2), (1, 3), (2, 1), (2, 4), (3, 1), (3, 5), (4, 6), (4, 7), (5, 8), (5, 9),
+(6, 10), (6, 11), (7, 12), (7, 13), (8, 14), (8, 15), (9, 16), (9, 17), (10, 18), (10, 19);
