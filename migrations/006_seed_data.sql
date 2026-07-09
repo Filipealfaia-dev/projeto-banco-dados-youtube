@@ -56,15 +56,21 @@ INSERT INTO public.videos (id_canal, titulo, url_video, duracao_segundos, data_p
 (9, 'Mundo de Wumpus em Python', 'yt.com/v/009', 2500, '2026-04-02 20:00:00'),
 (10, 'Treino C: Máquinas e Ergométrica', 'yt.com/v/010', 3000, '2026-04-12 08:00:00'),
 (11, 'Avaliação de Consultas Complexas', 'yt.com/v/011', 1100, '2026-04-20 17:00:00'),
-(12, 'Rotina de Estudos na UFPA', 'yt.com/v/012', 1300, '2026-05-05 19:00:00'),
-(13, 'Montando PC Gamer com Custo Benefício', 'yt.com/v/013', 4500, '2026-05-10 21:00:00'),
-(14, 'Lo-Fi Hip Hop - Beats para Estudar', 'yt.com/v/014', 1600, '2026-05-25 15:00:00'),
-(15, 'Mercado de TI em 2026 - Cortes', 'yt.com/v/015', 2200, '2026-06-01 11:00:00'),
-(16, 'Normalização de Dados até 3FN', 'yt.com/v/016', 2700, '2026-06-10 14:30:00'),
+(12, 'Shorts - Dica rápida de Clean Code', 'yt.com/v/012', 45, '2026-05-05 19:00:00'),
+(13, 'Shorts - Atalho Secreto no Windows', 'yt.com/v/013', 15, '2026-05-10 21:00:00'),
+(14, 'Shorts - Como centralizar uma DIV', 'yt.com/v/014', 30, '2026-05-25 15:00:00'),
+(15, 'Shorts - Erro grave com Git Commit', 'yt.com/v/015', 59, '2026-06-01 11:00:00'),
+(16, 'Shorts - O que é herança em Java', 'yt.com/v/016', 42, '2026-06-10 14:30:00'),
 (17, 'Protegendo seu Banco de SQL Injection', 'yt.com/v/017', 1900, '2026-06-20 16:45:00'),
 (18, 'Views Materializadas para Dashboards', 'yt.com/v/018', 2100, '2026-06-25 09:30:00'),
 (19, 'Transações ACID Explicadas', 'yt.com/v/019', 3100, '2026-07-01 10:20:00'),
-(20, 'Backup e Restore Seguro no Postgres', 'yt.com/v/020', 1400, '2026-07-05 18:15:00');
+(20, 'Backup e Restore Seguro no Postgres', 'yt.com/v/020', 1400, '2026-07-05 18:15:00'),
+(1, 'Shorts - O que é Polimorfismo', 'yt.com/v/021', 40, '2026-07-06 10:00:00'),
+(1, 'Shorts - Explicando a Heap', 'yt.com/v/022', 55, '2026-07-07 10:00:00'),
+(1, 'Shorts - Erro de Sintaxe Comum', 'yt.com/v/023', 30, '2026-07-08 10:00:00'),
+(2, 'Shorts - Boss Secreto Dark Souls', 'yt.com/v/024', 59, '2026-07-06 11:00:00'),
+(2, 'Shorts - Dica Rápida de Build', 'yt.com/v/025', 45, '2026-07-07 11:00:00'),
+(3, 'Shorts - Entendendo Tabela N:N', 'yt.com/v/026', 60, '2026-07-08 11:00:00');
 
 INSERT INTO public.comentarios (id_video, id_usuario, conteudo) VALUES
 (1, 2, 'Bom!'), (1, 3, 'Top!'), (1, 4, 'Ajudou muito.'), (1, 5, 'Excelente didática.'),
