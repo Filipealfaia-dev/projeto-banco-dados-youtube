@@ -49,6 +49,7 @@ As migrações foram estruturadas em ordem cronológica de dependência de chave
 3. **`003_videos.sql`**: Garante a consistência dos metadados de mídia. Contém uma constraint de validação para impedir que a duração (`duracao_segundos`) assuma valores menores ou iguais a zero.
 4. **`004_comentarios.sql`**: Persiste as interações textuais. Esta tabela recebe um Índice B-Tree (`idx_comentarios_video`) na coluna `id_video`. Como o YouTube é uma plataforma orientada à leitura, indexar essa chave estrangeira reduz a complexidade de busca de O(N) para O(log N) no carregamento de páginas de vídeos populares.
 5. **`005_inscricoes.sql`**: Resolve a relação N:N (Muitos para Muitos) entre Usuários e Canais. Utiliza uma **Chave Primária Composta** (`PRIMARY KEY (id_usuario, id_canal)`) para impedir logicamente a duplicidade de inscrições e garantir a consistência das métricas de contagem de inscritos.
+7. `007_view_shorts.sql` - Criação da view para análise de vídeos curtos.
 
 *Nota técnica: Todas as chaves estrangeiras implementam o comportamento `ON DELETE CASCADE`. Optou-se por essa abordagem para manter a integridade referencial estrita no escopo acadêmico, limpando registros órfãos de forma atômica.*
 
