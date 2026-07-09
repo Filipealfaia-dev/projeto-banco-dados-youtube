@@ -13,8 +13,9 @@ Para garantir alta coesão, consistência conceitual e viabilidade de indexaçã
 ---
 
 ### Discentes:
-* Filipe dos Anjos Alfaia
-
+### Discentes:
+* Filipe dos Anjos Alfaia - Matrícula: 202511140019
+* Matheus Hiago dos Santos Vinagre - Matrícula: 202511140008
 ---
 
 ### Modelagem do DER:
