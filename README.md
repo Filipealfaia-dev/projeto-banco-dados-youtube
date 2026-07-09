@@ -17,6 +17,9 @@ Para garantir alta coesão, consistência conceitual e viabilidade de indexaçã
 * Filipe dos Anjos Alfaia - Matrícula: 202511140019
 * Matheus Hiago dos Santos Vinagre - Matrícula: 202511140008
 ---
+### Consultas da Avaliação
+As consultas solicitadas pelo professor estão disponíveis no arquivo `consultas.sql` na raiz do repositório.
+---
 
 ### Modelagem do DER:
 <img width="1121" height="791" alt="diagrama_youtube_bd" src="https://github.com/user-attachments/assets/3fb4f796-6211-49a1-8e79-47575d6c6535" />
